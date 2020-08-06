@@ -35,7 +35,7 @@ Bytes 8,9,10 and 11 are a representation of the air pressure in kPA; Bytes 12,13
 To get the values we need to do a little-endian conversion.
 
 ```
-long result = byte0|byte1<<8|byte2<<16|byte3<<24;
+long result = byte0|byte1<<8|byte2<<16|byte3<<24
 ```
 
 The pressure in kPA is obtained by dividing by 1000 the value obtained from the conversion:<br>
