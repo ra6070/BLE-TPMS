@@ -13,11 +13,11 @@ Manufacturer data looks like this:
 
 And now let's analyze in depth the received data:
 
-`0001`		Manufacturer
-`80`		Sensor Number (80:1, 81:2, 82:3, 83:4, ...)
-`EACA`		Address Prefix
-`108A78`	Sensor Address
-`E36D0000`	Tire pressure (in kPA)
-`E60A0000`	Tire Temperature (in Celsius)
-`5B`		Battery Percentage
-`00`		Alarm Flag (00: Ok, 01: No pressure)
+`0001`		Manufacturer<br>
+`80`		Sensor Number (80:1, 81:2, 82:3, 83:4, ...)<br>
+`EACA`		Address Prefix<br>
+`108A78`	Sensor Address<br>
+`E36D0000`	Tire pressure (in kPA)<br>
+`E60A0000`	Tire Temperature (in Celsius)<br>
+`5B`		Battery Percentage<br>
+`00`		Alarm Flag (00: Ok, 01: No pressure)<br>
