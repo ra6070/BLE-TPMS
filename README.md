@@ -13,7 +13,7 @@ Manufacturer data looks like this:
 
 And now let's analyze in depth the received data:<br><br>
 _bytes 0 and 1_<br>
-`0001`		Manufacturer<br><br>
+`0001`		Manufacturer (see https://www.bluetooth.com/specifications/assigned-numbers/company-identifiers/)<br><br>
 _byte 2_<br>
 `80`		Sensor Number (`80`:1, `81`:2, `82`:3, `83`:4, ...)<br><br>
 _bytes 3 and 4_<br>
