@@ -40,9 +40,16 @@ long result = byte0|byte1<<8|byte2<<16|byte3<<24;
 
 The pressure in kPA is obtained by dividing by 1000 the value obtained from the conversion:<br>
 ```
-formula
+kPA=result/1000.0
 ```
-<br><br>
+<br>
 The pressure in bar is obtained by dividing by 100000 the value obtained from the conversion:<br>
-
+```
+bar=result/100000.0
+```
+<br>
 The temperature in Celsius is obtained by dividing by 100 the value obtained from the conversion:<br>
+```
+temp=result/100.0
+```
+<br>
