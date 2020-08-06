@@ -59,12 +59,10 @@ The temperature (Bytes 12,13,14,15) in Celsius is obtained by dividing by 100 th
 temp=result/100.0
 ```
 
-<br>
 ## Battery Percentage
 
 Byte 16 return the battery Percentage
 
-<br>
 ## Alarm Flag
 
 Byte 17 return the Alarm Flag<br>
