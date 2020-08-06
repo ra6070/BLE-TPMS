@@ -38,25 +38,35 @@ To get the values we need to do a little-endian conversion.
 long result = byte0|byte1<<8|byte2<<16|byte3<<24
 ```
 
-
-The pressure in kPA is obtained by dividing by 1000 the value obtained from the conversion:<br>
+<br>
+The pressure (Bytes 8,9,10,11) in kPA is obtained by dividing by 1000 the value obtained from the conversion:<br>
 
 ```
 kPA=result/1000.0
 ```
 
 <br>
-The pressure in bar is obtained by dividing by 100000 the value obtained from the conversion:<br>
+The pressure (Bytes 8,9,10,11) in bar is obtained by dividing by 100000 the value obtained from the conversion:<br>
 
 ```
 bar=result/100000.0
 ```
 
 <br>
-The temperature in Celsius is obtained by dividing by 100 the value obtained from the conversion:<br>
+The temperature (Bytes 12,13,14,15) in Celsius is obtained by dividing by 100 the value obtained from the conversion:<br>
 
 ```
 temp=result/100.0
 ```
 
 <br>
+## Battery Percentage
+
+Byte 16 return the battery Percentage
+
+<br>
+## Alarm Flag
+
+Byte 17 return the Alarm Flag<br>
+`00` Normal condition<br>
+`01` No Pressure<br>
