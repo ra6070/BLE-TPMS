@@ -24,7 +24,6 @@ BLEClient*  pClient;
 static BLEAddress *pServerAddress;
 // TPMS BLE SENSORS known addresses
 String knownAddresses[] = { "80:ea:ca:10:8a:78" , "81:ea:ca:20:89:e5"};   
-bool deviceFound = false;
 
 static void notifyCallback(
   BLERemoteCharacteristic* pBLERemoteCharacteristic,
@@ -73,12 +72,6 @@ static void notifyCallback(
           Serial.println("ALARM!");
         }
         Serial.println("");
-        if (Device.getRSSI() > -85) {
-          deviceFound = true;
-        }
-        else {
-          deviceFound = false;
-        }
         Device.getScan()->stop();
         delay(100);
       }
